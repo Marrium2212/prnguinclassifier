@@ -71,7 +71,7 @@ input_penguins = pd.concat([input_df,X_raw], axis=0)
 with st.expander("Input data")
 st.write("**Input data**")
 input_df
-st.write('**Combined data**"):
+st.write("**Combined data**"):
  st.write("**Input data**")
 
         
