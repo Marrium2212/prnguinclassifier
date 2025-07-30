@@ -12,7 +12,21 @@ st.info("This is end-to-end Machine Learning App")
  
 with st.expander("Data"):
 
-  pass
+  st.write(:**Raw data**")
+  df = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv")
+  df
+
+  st.write("Input variables")
+  X_raw = df.drop('species',axis=1)
+  X_raw
+
+  st.write("Target variable")
+  y_raw = df.species)
+  y_raw
+
+  st.write("Descriptive Statistics")
+  des =df.describe()
+  des
  
 with st.expander("Data Visualization"):
 
