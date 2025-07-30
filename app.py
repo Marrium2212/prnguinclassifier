@@ -21,7 +21,7 @@ with st.expander("Data"):
   X_raw
 
   st.write("Target variable")
-  y_raw = df.species)
+  y_raw = df.species
   y_raw
 
   st.write("Descriptive Statistics")
