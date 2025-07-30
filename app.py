@@ -34,6 +34,10 @@ with st.expander("Data Visualization"):
  
 with st.expander("Input data"):
 
+ with st.expander("Box Plot by Species"):
+    fig = px.box(df, x='species', y='bill_length_mm', color='species')
+    st.plotly_chart(fig)
+
   pass
  
 with st.expander("Data Preperation"):
