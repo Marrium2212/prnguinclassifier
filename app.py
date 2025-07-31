@@ -33,16 +33,6 @@ with st.expander('Data visualization'):
 ).interactive()
   st.altair_chart(chart, use_container_width=True)
 
-  st.write("Bill Length vs Bill Depth")
-  fig, ax = plt.subplots()
-  sns.scatterplot(data=df, x='bill_length_mm', y='bill_depth_mm', hue='species', ax=ax)
-  st.pyplot(fig)
- 
-  st.write("Bill Length vs Body Mass")
-  fig, ax = plt.subplots()
-  sns.scatterplot(data=df, x='bill_length_mm', y='body_mass_g', hue='species', ax=ax)
-  st.pyplot(fig)
-
 # Input features
 with st.sidebar:
   st.header('Input features')
